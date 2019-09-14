@@ -1,0 +1,30 @@
+logLevel: 'debug'
+
+
+timeouts:
+  shortWait: 15
+  mediumWait: 25
+  longWait: 60
+
+locale:
+  language: 'cs'
+  country: 'CZ'
+
+remote:
+  server: 'http://172.26.1.44:4444/wd/hub'
+
+drivers:
+  chrome:
+    driver: 'C:\\tools\\chromedriver.exe'
+    options:
+    capabilities:
+      profile.content_settings.exceptions.plugins.*,*.per_resource.adobe-flash-player: 1
+
+web:
+  applications:
+    INVENTI:
+      environments:
+        DEV: 'https://inventi:inventi@dev.inventi.cz/'
+        UAT: 'https://www.inventi.cz/'
+        2UAT: 'https://www.inventi.cz/'
+        PROD: 'https://www.inventi.cz/'
