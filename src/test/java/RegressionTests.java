@@ -1,16 +1,13 @@
-package inventiwebtest.aboutustest;
-
 import data.LoanData;
 import data.PersonalData;
-import inventiwebtest.AbstractTest;
 import org.testng.annotations.Test;
 import pageobjects.HomePage;
 import smartdriver.automation.framework.core.factory.POFactory;
 
-public class GetInTouchTest extends AbstractTest {
+public class RegressionTests extends AbstractTest {
 
     @Test
-    public void aboutUs() {
+    public void generalFlowTest() {
         PersonalData personalData = new PersonalData();
         personalData.setFirstName("Pepa")
                 .setSurname("Vomáčka")

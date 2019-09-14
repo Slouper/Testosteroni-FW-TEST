@@ -1,6 +1,7 @@
 package pageobjects;
 
 import smartdriver.automation.framework.core.configuration.timeouts.Timeout;
+import smartdriver.automation.framework.core.driver.DriverManager;
 import smartdriver.automation.framework.core.driver.Session;
 import smartdriver.automation.framework.platforms.desktop.HasAttribute;
 import smartdriver.automation.framework.platforms.desktop.components.Button;
@@ -28,7 +29,12 @@ public class IdCardPage extends Header {
     private Button<IdCardPage> upload;
 
     public IdCardPage uploadIdCard() {
-        chooseFile.sendKeys("obcanka.jpg");
+        chooseFile.sendKeys("/Users/petrfifka/IdeaProjects/Testosteroni-FW-TEST/src/main/resources/obcanka.jpg");
+        upload.click();
+        DriverManager.pause(session, 2000);
+        chooseFile.sendKeys("/Users/petrfifka/IdeaProjects/Testosteroni-FW-TEST/src/main/resources/obcanka.jpg");
+        upload.click();
+        DriverManager.pause(session, 200000);
         return this;
     }
 }
