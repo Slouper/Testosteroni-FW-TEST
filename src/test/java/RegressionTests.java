@@ -24,7 +24,7 @@ public class RegressionTests extends AbstractTest {
         homePage.clickArrangeLoan()
                 .clickWantLoan()
                 .setLoanAmountPercent(0.75)
-                .setLoanTerm(0.5)
+                .setLoanTermPercent(0.5)
                 .saveLoanDetails(realLoanData)
                 .clickNoRobot()
                 .clickContinue()
@@ -32,7 +32,5 @@ public class RegressionTests extends AbstractTest {
                 .clickSubmit()
                 .processSubmit()
                 .uploadIdCard();
-
     }
-
 }

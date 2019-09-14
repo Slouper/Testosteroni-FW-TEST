@@ -81,7 +81,7 @@ public class LoanCalculatorPage extends Header {
         return this;
     }
 
-    public LoanCalculatorPage setLoanTerm(double loanPercent) {
+    public LoanCalculatorPage setLoanTermPercent(double loanPercent) {
         moveSlider(loanTermSlider, loanPercent);
         return this;
     }
