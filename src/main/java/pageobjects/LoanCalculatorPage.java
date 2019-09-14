@@ -57,11 +57,11 @@ public class LoanCalculatorPage extends Header {
     @HasAttribute(element = Element.H3, attribute = TEXT, function = CONTAINS, value = "Měsíční splátka")
     private WebElement<LoanCalculatorPage> installmentHeader;
 
-    @HasAttribute(attribute = NAME, value = "favorite")
-    private Input<LoanCalculatorPage> heartNoRobot;
+    @HasAttribute(attribute = CLASS, value = "MuiIconButton-label", function = CONTAINS)
+    private Span<LoanCalculatorPage> heartNoRobot;
 
     @HasAttribute(attribute = ID, value = "pokracovat", function = CONTAINS)
-    private Button continueButton;
+    private Button<PersonalDataPage> continueButton;
 
     //TODO NICE TO HAVE check if percent is in range
     private LoanCalculatorPage moveSlider(Component element, double loanPercent) {
@@ -97,6 +97,10 @@ public class LoanCalculatorPage extends Header {
         heartNoRobot.click();
         continueButton.waitUntilVisible();
         return this;
+    }
+
+    public PersonalDataPage clickContinue() {
+        return continueButton.clickOn();
     }
 
 }

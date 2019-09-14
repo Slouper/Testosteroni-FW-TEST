@@ -1,7 +1,9 @@
 package pageobjects;
 
+import data.PersonalData;
 import smartdriver.automation.framework.core.driver.Session;
 import smartdriver.automation.framework.platforms.desktop.HasAttribute;
+import smartdriver.automation.framework.platforms.desktop.components.Button;
 import smartdriver.automation.framework.platforms.desktop.components.Input;
 import smartdriver.automation.framework.platforms.desktop.data.Element;
 import smartdriver.automation.framework.platforms.shared.annotations.WebApplication;
@@ -45,5 +47,21 @@ public class PersonalDataPage extends Header {
     @HasAttribute(attribute = Attribute.ID, value = "city")
     private Input<PersonalDataPage> city;
 
+    @WaitForVisible
+    @HasAttribute(attribute = Attribute.TITLE, value = "Pokračovat", function = Function.CONTAINS)
+    private Button<PrescoringPage> submit;
 
+    public PersonalDataPage fillForm(PersonalData data) {
+        firstName.sendKeys(data.getFirstName());
+        surname.sendKeys(data.getSurname());
+        phone.sendKeys(data.getPhone());
+        email.sendKeys(data.getEmail());
+        birthNumber.sendKeys(data.getBirthNumber());
+        city.sendKeys(data.getCity());
+        return this;
+    }
+
+    public PrescoringPage clickSubmit() {
+        return submit.clickOn();
+    }
 }
