@@ -11,7 +11,9 @@ public class GetInTouchTest extends AbstractTest {
     public void aboutUs() {
         HomePage homePage = POFactory.initDriver();
         homePage.clickArrangeLoan()
-            .clickWantLoan();
+            .clickWantLoan()
+            .setLoanAmountPercent(0.75)
+            .setLoanTerm(0.5);
     }
 
 }

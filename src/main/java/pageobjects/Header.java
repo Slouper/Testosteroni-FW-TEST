@@ -16,9 +16,8 @@ public class Header extends PageObject {
         super(session);
     }
 
-    //FIXME duplicate element
     @WaitForVisible
-    @HasAttribute(attribute = Attribute.ID, value = "cashloan")
-    private Anchor arrangeLoan;
+    @HasAttribute(attribute = Attribute.HREF, value = "/cashloan")
+    protected Anchor<CashLoanPage> arrangeLoan;
 
 }

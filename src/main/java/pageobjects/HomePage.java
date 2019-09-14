@@ -7,6 +7,7 @@ import smartdriver.automation.framework.platforms.desktop.data.Element;
 import smartdriver.automation.framework.platforms.shared.annotations.WebApplication;
 import smartdriver.automation.framework.platforms.shared.annotations.synchro.WaitForVisible;
 import smartdriver.automation.framework.platforms.shared.param.data.Attribute;
+import smartdriver.automation.framework.platforms.shared.param.data.Function;
 
 @WebApplication(application = "hackathon")
 @WaitForVisible
@@ -18,13 +19,9 @@ public class HomePage extends Header {
     }
 
     @WaitForVisible
-    @HasAttribute(element = Element.H2, attribute = Attribute.TEXT, value = "Půjčka pro splnění vašich přání.")
+    @HasAttribute(element = Element.H2, attribute = Attribute.TEXT, value = "Jsme fintech banka", function = Function.CONTAINS)
     private Element pageHeader;
 
-    //FIXME duplicate element
-    @WaitForVisible
-    @HasAttribute(attribute = Attribute.ID, value = "cashloan")
-    private Anchor<CashLoanPage> arrangeLoan;
 
     public CashLoanPage clickArrangeLoan() {
         return arrangeLoan.clickOn();
