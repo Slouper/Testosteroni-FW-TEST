@@ -18,12 +18,7 @@ drivers:
 
 web:
   applications:
-    INVENTI:
+    hackathon:
       environments:
-        TEST: 'https://www.inventi.cz'
-        PROD: 'https://www.inventi.cz'
+        DEV: 'http://206.189.249.28:3000/'
 
-synchronization:
-  activity:
-    xpath:
-      - "//div[@id='loadModal' and contains(@style, 'display: block;')]"

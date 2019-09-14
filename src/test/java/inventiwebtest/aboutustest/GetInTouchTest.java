@@ -10,6 +10,8 @@ public class GetInTouchTest extends AbstractTest {
     @Test
     public void aboutUs() {
         HomePage homePage = POFactory.initDriver();
+        homePage.clickArrangeLoan()
+            .clickWantLoan();
     }
 
 }
