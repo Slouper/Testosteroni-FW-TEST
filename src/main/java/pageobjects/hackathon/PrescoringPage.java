@@ -1,4 +1,4 @@
-package pageobjects;
+package pageobjects.hackathon;
 
 import data.LoanData;
 import data.PersonalData;
@@ -8,7 +8,6 @@ import smartdriver.automation.framework.core.configuration.timeouts.Timeout;
 import smartdriver.automation.framework.core.driver.Session;
 import smartdriver.automation.framework.platforms.desktop.HasAttribute;
 import smartdriver.automation.framework.platforms.desktop.components.Button;
-import smartdriver.automation.framework.platforms.desktop.components.Input;
 import smartdriver.automation.framework.platforms.desktop.components.Span;
 import smartdriver.automation.framework.platforms.desktop.data.Element;
 import smartdriver.automation.framework.platforms.shared.annotations.synchro.WaitForVisible;

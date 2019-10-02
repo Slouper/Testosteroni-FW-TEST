@@ -1,4 +1,4 @@
-package pageobjects;
+package pageobjects.hackathon;
 
 import smartdriver.automation.framework.core.driver.Session;
 import smartdriver.automation.framework.core.page_object.PageObject;

@@ -9,7 +9,7 @@ public abstract class AbstractTest extends TestClass {
     @Parameters({"run", "platform", "environment", "browser"})
     public void init(@Optional("LOCAL") String run,
                      @Optional("WINDOWS") String platform,
-                     @Optional("DEV") String environment,
+                     @Optional("PROD") String environment,
                      @Optional("CHROME") String browser) {
     }
 }

@@ -1,4 +1,4 @@
-package pageobjects;
+package pageobjects.hackathon;
 
 import data.PersonalData;
 import smartdriver.automation.framework.core.driver.Session;
@@ -6,7 +6,6 @@ import smartdriver.automation.framework.platforms.desktop.HasAttribute;
 import smartdriver.automation.framework.platforms.desktop.components.Button;
 import smartdriver.automation.framework.platforms.desktop.components.Input;
 import smartdriver.automation.framework.platforms.desktop.data.Element;
-import smartdriver.automation.framework.platforms.shared.annotations.WebApplication;
 import smartdriver.automation.framework.platforms.shared.annotations.synchro.WaitForVisible;
 import smartdriver.automation.framework.platforms.shared.param.data.Attribute;
 import smartdriver.automation.framework.platforms.shared.param.data.Function;

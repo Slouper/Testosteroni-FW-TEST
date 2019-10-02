@@ -1,4 +1,4 @@
-package pageobjects;
+package pageobjects.hackathon;
 
 import data.LoanData;
 import org.openqa.selenium.interactions.Actions;
@@ -8,7 +8,6 @@ import smartdriver.automation.framework.core.page_object.Component;
 import smartdriver.automation.framework.platforms.desktop.HasAttribute;
 import smartdriver.automation.framework.platforms.desktop.HasAttributes;
 import smartdriver.automation.framework.platforms.desktop.components.Button;
-import smartdriver.automation.framework.platforms.desktop.components.Input;
 import smartdriver.automation.framework.platforms.desktop.components.Span;
 import smartdriver.automation.framework.platforms.desktop.data.Element;
 import smartdriver.automation.framework.platforms.shared.annotations.synchro.WaitForVisible;
@@ -17,10 +16,8 @@ import smartdriver.automation.framework.platforms.shared.param.data.Attribute;
 import smartdriver.automation.framework.platforms.shared.param.data.Axis;
 import smartdriver.automation.framework.platforms.shared.param.data.Function;
 
-import static smartdriver.automation.framework.platforms.desktop.data.Element.DIV;
 import static smartdriver.automation.framework.platforms.shared.param.data.Attribute.*;
 import static smartdriver.automation.framework.platforms.shared.param.data.Function.CONTAINS;
-import static smartdriver.automation.framework.platforms.shared.param.data.Operator.AND;
 
 public class LoanCalculatorPage extends Header {
 

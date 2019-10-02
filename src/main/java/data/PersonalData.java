@@ -8,6 +8,7 @@ public class PersonalData {
     private String email;
     private String birthNumber;
     private String city;
+    private String language;
 
     public String getFirstName() {
         return firstName;

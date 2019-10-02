@@ -21,4 +21,7 @@ web:
     hackathon:
       environments:
         DEV: 'http://206.189.249.28:3000/'
+    redmine:
+      environments:
+        PROD: 'http://redmine.org'
 
